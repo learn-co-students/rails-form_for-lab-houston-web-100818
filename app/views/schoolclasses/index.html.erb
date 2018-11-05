@@ -1,0 +1,11 @@
+<h1>Classes</h1>
+
+<% @schoolclasses.each do |sc| %>
+    <ul>
+        <li><%= link_to sc.title, schoolclass_path(sc) %>
+           <%= link_to 'Edit', edit_schoolclass_path(sc) %>
+           <%= link_to 'Delete', sc, method: :delete %> </li>
+    </ul>
+<%end%>
+<br>
+<%= link_to "Add Class", new_schoolclass_path %>
