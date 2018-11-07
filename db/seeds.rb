@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+SchoolClass.destroy_all
+Student.destroy_all
+
+school1 = SchoolClass.create(title: "engr", room_number: 11)
+student1 = Student.create(:first_name, :last_name)
